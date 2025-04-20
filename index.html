@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBio - Diptesh Karmakar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <div class="max-w-xl mx-auto mt-10 bg-white shadow-xl rounded-2xl p-6">
+    <div class="text-center">
+      <img src="https://via.placeholder.com/100" alt="Diptesh Karmakar" class="rounded-full mx-auto mb-4">
+      <h1 class="text-2xl font-bold">Diptesh Karmakar</h1>
+      <p class="text-sm text-gray-600">Web Developer | IT Solution Expert | Creator of QuickBio</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://diptesh.org" class="text-blue-500 hover:underline">🌐 Website</a>
+        <a href="https://github.com/yourusername" class="text-gray-700 hover:underline">💻 GitHub</a>
+        <a href="mailto:your@email.com" class="text-red-500 hover:underline">✉️ Email</a>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-lg font-semibold mb-2">About Me</h2>
+      <p class="text-sm text-gray-700">I'm Diptesh, a passionate web developer from Kolkata. I love building simple, clean, and functional web apps that solve real-world problems.</p>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-lg font-semibold mb-2">Skills</h2>
+      <ul class="list-disc list-inside text-sm text-gray-700">
+        <li>HTML, CSS, JavaScript</li>
+        <li>PHP, Laravel, Node.js</li>
+        <li>Tailwind CSS, Bootstrap</li>
+        <li>MySQL, MongoDB</li>
+      </ul>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-lg font-semibold mb-2">QR Code to My Page</h2>
+      <div id="qrcode" class="mt-2"></div>
+    </div>
+  </div>
+
+  <script>
+    // QR code generator
+    const url = "https://diptesh.org"; // Change this to your live link
+    new QRCode(document.getElementById("qrcode"), {
+      text: url,
+      width: 128,
+      height: 128,
+    });
+  </script>
+</body>
+</html>
